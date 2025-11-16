@@ -19,7 +19,7 @@
 }
 body {
   font-family: 'Montserrat', sans-serif;
-  color: #0c0c0c;
+  color: #000000;
   background-color: #cccccc;
   overflow-x: hidden;
  
@@ -81,7 +81,7 @@ h2 {
     display: block;
     width: 70px;
     height: 5px;
-    background: #8603D2;
+    background: transparent;
     margin: 10px auto 10px;
 
 }
