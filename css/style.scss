@@ -185,6 +185,12 @@ a:focus {
         }
       }
     }
+
+    .nav_search-group {
+      margin-left: 25px;
+      display: flex;
+      align-items: center;
+    }
   }
 }
 
@@ -339,12 +345,18 @@ a:focus {
   width: 100%;
   height: 100%;
   z-index: -1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0 3vw 0 0;
+  pointer-events: none;
 
   img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top right;
+    width: min(520px, 55vw);
+    height: auto;
+    max-height: 90vh;
+    object-fit: contain;
+    object-position: center right;
   }
 }
 
@@ -491,6 +503,7 @@ a:focus {
   .box {
     padding: 120px 45px;
     position: relative;
+    overflow: hidden;
   }
 
   .arrival_bg_box {
@@ -499,13 +512,26 @@ a:focus {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3vw;
+    pointer-events: none;
 
     img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: top left;
+      width: min(420px, 45%);
+      height: auto;
+      max-height: 90%;
+      object-fit: contain;
+      object-position: center right;
+    }
+  }
+
+  .box {
+    .row {
+      position: relative;
+      z-index: 2;
     }
   }
 
