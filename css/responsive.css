@@ -28,6 +28,18 @@
     align-items: flex-start;
   }
 
+  .nav_search-group {
+    width: 100%;
+    margin: 10px 0 0;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .nav_search-group .nav_search-btn {
+    margin-left: 0;
+  }
+
   .custom_nav-container .navbar-nav .nav-item .nav-link {
     padding: 10px 0;
     margin: 0;
@@ -37,6 +49,14 @@
 
   .slider_section {
     padding: 120px 0 60px;
+  }
+
+  .slider_bg_box {
+    padding: 0 20px;
+  }
+
+  .slider_bg_box img {
+    width: min(420px, 75vw);
   }
 
   .slider_section .detail-box h1 {
@@ -90,8 +110,18 @@
     font-size: 2.3rem;
   }
 
+  .slider_bg_box {
+    position: relative;
+    height: auto;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
   .slider_bg_box img {
     opacity: 0.2;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
   }
 
   .about_section .row,
@@ -137,6 +167,10 @@
 
   .slider_section {
     padding: 110px 0 55px;
+  }
+
+  .slider_bg_box img {
+    max-width: 320px;
   }
 }
 

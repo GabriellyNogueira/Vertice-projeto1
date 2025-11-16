@@ -168,6 +168,16 @@ a:focus {
   margin-left: auto;
 }
 
+.nav_search-group {
+  margin-left: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .custom_nav-container .navbar-nav .nav-item .nav-link {
     padding: 5px 20px;
     color: #000000;
@@ -367,17 +377,29 @@ a:focus {
   width: 100%;
   height: 100%;
   z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 3vw 0 0;
+  pointer-events: none;
 }
 
-  .slider_bg_box img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: top right;
-    object-position: top right;
-    margin: 0;
-  }
+.slider_bg_box img {
+  width: min(520px, 55vw);
+  height: auto;
+  max-height: 90vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center right;
+     object-position: center right;
+  margin: 0;
+}
 .product_section .heading_container {
   margin-bottom: 20px;
 }
@@ -556,6 +578,7 @@ a:focus {
 .arrival_section .box {
   padding: 120px 45px;
   position: relative;
+  overflow: hidden;
 }
 
 .arrival_section .arrival_bg_box {
@@ -564,19 +587,34 @@ a:focus {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 3;
+    z-index: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 3vw;
+    pointer-events: none;
 }
 
-  .arrival_section .arrival_bg_box img {
-      width: 55%;
-      max-width: 520px;
-      height: 100%;
-      -o-object-fit: cover;
-      object-fit: cover;
-      -o-object-position: top left;
-      object-position: top left;
-      margin: 0;
+.arrival_section .arrival_bg_box img {
+    width: min(420px, 45%);
+    height: auto;
+    max-height: 90%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center right;
+       object-position: center right;
+    margin: 0;
   }
+.arrival_section .box .row {
+  position: relative;
+  z-index: 2;
+}
 
 .arrival_section a {
   display: inline-block;
