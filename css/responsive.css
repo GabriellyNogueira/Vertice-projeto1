@@ -56,9 +56,9 @@ display: none;
   }
 
   .dropdown-menu .dropdown-item {
-    color: red !important;
+    color: none !important;
     padding: 8px 12px !important;
     background-color: transparent !important;
-    border: 2px solid red !important;
+    border:none!important;
   }
 }
