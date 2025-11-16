@@ -58,7 +58,7 @@ display: none;
   .dropdown-menu .dropdown-item {
     color: red !important;
     padding: 8px 12px !important;
-    background-color: blue !important;
+    background-color: transparent !important;
     border: 2px solid red !important;
   }
 }
