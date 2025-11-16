@@ -1,6 +1,6 @@
 
 
-@media (max-width: 972px) {
+@media (max-width: 767px) {
   h1,h2 {
     font-size: 55px !important; /* Ajusta o tamanho da fonte para telas menores */
   }
